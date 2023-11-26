@@ -42,6 +42,9 @@ public class MenuUsuarioActivity extends AppCompatActivity {
         botonBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent pasarPantalla= new Intent(MenuUsuarioActivity.this, BuscarActivity.class);
+                finish();
+                startActivity(pasarPantalla);
 
             }
         });
